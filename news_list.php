@@ -28,4 +28,4 @@ if (api_is_platform_admin()) {
 }
 
 $tpl->assign('content', $content);
-$tpl->display_one_col_template(); 
+$tpl->display_one_col_template();

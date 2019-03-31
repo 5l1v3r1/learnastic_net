@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
+class ComposerStaticInit42f5988105ee0288c4673a6e19f14684
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
         'edc6464955a37aa4d5fbf39d40fb6ee7' => __DIR__ . '/..' . '/symfony/polyfill-php55/bootstrap.php',
         '3e2471375464aac821502deb0ac64275' => __DIR__ . '/..' . '/symfony/polyfill-php54/bootstrap.php',
@@ -19,15 +19,15 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'd11dcc0191a380951885e568af488540' => __DIR__ . '/..' . '/sonata-project/block-bundle/src/Resources/stubs/symfony2.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
-        '99973567a8411c024df512e15cef8a0d' => __DIR__ . '/..' . '/essence/essence/lib/bootstrap.php',
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        '7e702cccdb9dd904f2ccf22e5f37abae' => __DIR__ . '/..' . '/facebook/php-sdk-v4/src/Facebook/polyfills.php',
-        'e555c0c040df348f9d22b6d974fdb423' => __DIR__ . '/..' . '/jimmiw/php-time-ago/timeago.inc.php',
-        '47b18101462cdeb25f661813113e3182' => __DIR__ . '/..' . '/kigkonsult/icalcreator/autoload.php',
         '7bb4f001eb5212bde073bf47a4bbedad' => __DIR__ . '/..' . '/szymach/c-pchart/constants.php',
+        '47b18101462cdeb25f661813113e3182' => __DIR__ . '/..' . '/kigkonsult/icalcreator/autoload.php',
+        '99973567a8411c024df512e15cef8a0d' => __DIR__ . '/..' . '/essence/essence/lib/bootstrap.php',
+        'e555c0c040df348f9d22b6d974fdb423' => __DIR__ . '/..' . '/jimmiw/php-time-ago/timeago.inc.php',
+        '7e702cccdb9dd904f2ccf22e5f37abae' => __DIR__ . '/..' . '/facebook/php-sdk-v4/src/Facebook/polyfills.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -137,6 +137,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
             'PhpOffice\\PhpWord\\' => 18,
             'PhpOffice\\Common\\' => 17,
             'Patchwork\\' => 10,
+            'PackageVersions\\' => 16,
         ),
         'M' => 
         array (
@@ -186,6 +187,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'D' => 
         array (
             'Doctrine\\DBAL\\Migrations\\' => 25,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
@@ -560,6 +562,10 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         array (
             0 => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork',
         ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -647,6 +653,10 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'Doctrine\\DBAL\\Migrations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/DBAL/Migrations',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
         'Doctrine\\Common\\Cache\\' => 
         array (
@@ -884,10 +894,6 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
             'Doctrine\\Common\\Lexer\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
-            ),
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
             'Doctrine\\Common\\DataFixtures' => 
             array (
@@ -5135,7 +5141,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'MultipleAnswerCombinationTrueFalse' => __DIR__ . '/../..' . '/main/exercise/multiple_answer_combination_true_false.class.php',
         'MultipleAnswerTrueFalse' => __DIR__ . '/../..' . '/main/exercise/multiple_answer_true_false.class.php',
         'MultipleAnswerTrueFalseDegreeCertainty' => __DIR__ . '/../..' . '/main/exercise/MultipleAnswerTrueFalseDegreeCertainty.php',
-        'MyPackageHandler' => __DIR__ . '/../..' . '/plugin/pens/lib/tests/test_pens_package_handler.php',
+        'MyPackageHandler' => __DIR__ . '/../..' . '/plugin/pens/lib/pens_server_test.php',
         'MyRequestHandler' => __DIR__ . '/../..' . '/plugin/pens/lib/pens_client_test.php',
         'MySpace' => __DIR__ . '/../..' . '/main/inc/lib/myspace.lib.php',
         'Net_SCP' => __DIR__ . '/../..' . '/main/inc/lib/phpseclib/Net/SCP.php',
@@ -21837,6 +21843,9 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'PHPQRCode\\QRtools' => __DIR__ . '/..' . '/aferrandini/phpqrcode/lib/PHPQRCode/QRtools.php',
         'PNGImageBaker' => __DIR__ . '/../..' . '/main/inc/lib/baker.lib.php',
         'POP3' => __DIR__ . '/../..' . '/main/inc/lib/phpmailer/class.pop3.php',
+        'PackageVersions\\FallbackVersions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/FallbackVersions.php',
+        'PackageVersions\\Installer' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Installer.php',
+        'PackageVersions\\Versions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Versions.php',
         'Pager' => __DIR__ . '/../..' . '/main/inc/lib/pear/Pager/Pager.php',
         'Pager_Common' => __DIR__ . '/../..' . '/main/inc/lib/pear/Pager/Common.php',
         'Pager_HtmlWidgets' => __DIR__ . '/../..' . '/main/inc/lib/pear/Pager/HtmlWidgets.php',
@@ -22152,7 +22161,6 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\Exception\\InvalidProxyDirectoryException' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Exception/InvalidProxyDirectoryException.php',
         'ProxyManager\\Exception\\UnsupportedProxiedClassException' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Exception/UnsupportedProxiedClassException.php',
         'ProxyManager\\Factory\\AbstractBaseFactory' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Factory/AbstractBaseFactory.php',
-        'ProxyManager\\Factory\\AbstractLazyFactory' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Factory/AbstractLazyFactory.php',
         'ProxyManager\\Factory\\AccessInterceptorScopeLocalizerFactory' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Factory/AccessInterceptorScopeLocalizerFactory.php',
         'ProxyManager\\Factory\\AccessInterceptorValueHolderFactory' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Factory/AccessInterceptorValueHolderFactory.php',
         'ProxyManager\\Factory\\LazyLoadingGhostFactory' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Factory/LazyLoadingGhostFactory.php',
@@ -22173,7 +22181,6 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\Generator\\ClassGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/ClassGenerator.php',
         'ProxyManager\\Generator\\MagicMethodGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/MagicMethodGenerator.php',
         'ProxyManager\\Generator\\MethodGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/MethodGenerator.php',
-        'ProxyManager\\Generator\\ParameterGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/ParameterGenerator.php',
         'ProxyManager\\Generator\\Util\\ClassGeneratorUtils' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/Util/ClassGeneratorUtils.php',
         'ProxyManager\\Generator\\Util\\UniqueIdentifierGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Generator/Util/UniqueIdentifierGenerator.php',
         'ProxyManager\\Inflector\\ClassNameInflector' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Inflector/ClassNameInflector.php',
@@ -22181,7 +22188,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\Inflector\\Util\\ParameterEncoder' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Inflector/Util/ParameterEncoder.php',
         'ProxyManager\\Inflector\\Util\\ParameterHasher' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Inflector/Util/ParameterHasher.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizerGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php',
-        'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/Constructor.php',
+        'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\BindProxyProperties' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/BindProxyProperties.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\InterceptedMethod' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/InterceptedMethod.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\MagicClone' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicClone.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\MagicGet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicGet.php',
@@ -22189,15 +22196,16 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\MagicSet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicSet.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\MagicSleep' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicSleep.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\MagicUnset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicUnset.php',
+        'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\StaticProxyConstructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/StaticProxyConstructor.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorScopeLocalizer\\MethodGenerator\\Util\\InterceptorGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/Util/InterceptorGenerator.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolderGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php',
-        'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/Constructor.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\InterceptedMethod' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/InterceptedMethod.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\MagicClone' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicClone.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\MagicGet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicGet.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\MagicIsset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicIsset.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\MagicSet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicSet.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\MagicUnset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicUnset.php',
+        'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\StaticProxyConstructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/StaticProxyConstructor.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptorValueHolder\\MethodGenerator\\Util\\InterceptorGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/Util/InterceptorGenerator.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptor\\MethodGenerator\\MagicWakeup' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/MethodGenerator/MagicWakeup.php',
         'ProxyManager\\ProxyGenerator\\AccessInterceptor\\MethodGenerator\\SetMethodPrefixInterceptor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/MethodGenerator/SetMethodPrefixInterceptor.php',
@@ -22210,7 +22218,6 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\GetProxyInitializer' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/GetProxyInitializer.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\InitializeProxy' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/InitializeProxy.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\IsProxyInitialized' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/IsProxyInitialized.php',
-        'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\LazyLoadingMethodInterceptor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/LazyLoadingMethodInterceptor.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\MagicClone' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicClone.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\MagicGet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicGet.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\MagicIsset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicIsset.php',
@@ -22220,6 +22227,8 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\MethodGenerator\\SetProxyInitializer' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/SetProxyInitializer.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\PropertyGenerator\\InitializationTracker' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/InitializationTracker.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\PropertyGenerator\\InitializerProperty' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/InitializerProperty.php',
+        'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\PropertyGenerator\\PrivatePropertiesMap' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/PrivatePropertiesMap.php',
+        'ProxyManager\\ProxyGenerator\\LazyLoadingGhost\\PropertyGenerator\\ProtectedPropertiesMap' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/ProtectedPropertiesMap.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolderGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolder\\MethodGenerator\\GetProxyInitializer' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/GetProxyInitializer.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolder\\MethodGenerator\\InitializeProxy' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/InitializeProxy.php',
@@ -22234,26 +22243,29 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolder\\MethodGenerator\\SetProxyInitializer' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/SetProxyInitializer.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolder\\PropertyGenerator\\InitializerProperty' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/PropertyGenerator/InitializerProperty.php',
         'ProxyManager\\ProxyGenerator\\LazyLoadingValueHolder\\PropertyGenerator\\ValueHolderProperty' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/PropertyGenerator/ValueHolderProperty.php',
-        'ProxyManager\\ProxyGenerator\\LazyLoading\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoading/MethodGenerator/Constructor.php',
+        'ProxyManager\\ProxyGenerator\\LazyLoading\\MethodGenerator\\StaticProxyConstructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoading/MethodGenerator/StaticProxyConstructor.php',
         'ProxyManager\\ProxyGenerator\\NullObjectGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php',
-        'ProxyManager\\ProxyGenerator\\NullObject\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObject/MethodGenerator/Constructor.php',
         'ProxyManager\\ProxyGenerator\\NullObject\\MethodGenerator\\NullObjectMethodInterceptor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObject/MethodGenerator/NullObjectMethodInterceptor.php',
-        'ProxyManager\\ProxyGenerator\\PropertyGenerator\\PublicPropertiesDefaults' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/PropertyGenerator/PublicPropertiesDefaults.php',
+        'ProxyManager\\ProxyGenerator\\NullObject\\MethodGenerator\\StaticProxyConstructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObject/MethodGenerator/StaticProxyConstructor.php',
         'ProxyManager\\ProxyGenerator\\PropertyGenerator\\PublicPropertiesMap' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/PropertyGenerator/PublicPropertiesMap.php',
         'ProxyManager\\ProxyGenerator\\ProxyGeneratorInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ProxyGeneratorInterface.php',
         'ProxyManager\\ProxyGenerator\\RemoteObjectGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php',
-        'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/Constructor.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\MagicGet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\MagicIsset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\MagicSet' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\MagicUnset' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\RemoteObjectMethod' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php',
+        'ProxyManager\\ProxyGenerator\\RemoteObject\\MethodGenerator\\StaticProxyConstructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php',
         'ProxyManager\\ProxyGenerator\\RemoteObject\\PropertyGenerator\\AdapterProperty' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/PropertyGenerator/AdapterProperty.php',
+        'ProxyManager\\ProxyGenerator\\Util\\Properties' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Util/Properties.php',
         'ProxyManager\\ProxyGenerator\\Util\\ProxiedMethodsFilter' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Util/ProxiedMethodsFilter.php',
         'ProxyManager\\ProxyGenerator\\Util\\PublicScopeSimulator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Util/PublicScopeSimulator.php',
+        'ProxyManager\\ProxyGenerator\\Util\\UnsetPropertiesGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Util/UnsetPropertiesGenerator.php',
+        'ProxyManager\\ProxyGenerator\\ValueHolder\\MethodGenerator\\Constructor' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ValueHolder/MethodGenerator/Constructor.php',
         'ProxyManager\\ProxyGenerator\\ValueHolder\\MethodGenerator\\GetWrappedValueHolderValue' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ValueHolder/MethodGenerator/GetWrappedValueHolderValue.php',
         'ProxyManager\\ProxyGenerator\\ValueHolder\\MethodGenerator\\MagicSleep' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ValueHolder/MethodGenerator/MagicSleep.php',
         'ProxyManager\\Proxy\\AccessInterceptorInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Proxy/AccessInterceptorInterface.php',
+        'ProxyManager\\Proxy\\AccessInterceptorValueHolderInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php',
         'ProxyManager\\Proxy\\Exception\\RemoteObjectException' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Proxy/Exception/RemoteObjectException.php',
         'ProxyManager\\Proxy\\FallbackValueHolderInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Proxy/FallbackValueHolderInterface.php',
         'ProxyManager\\Proxy\\GhostObjectInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Proxy/GhostObjectInterface.php',
@@ -22273,6 +22285,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'ProxyManager\\Signature\\SignatureCheckerInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureCheckerInterface.php',
         'ProxyManager\\Signature\\SignatureGenerator' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureGenerator.php',
         'ProxyManager\\Signature\\SignatureGeneratorInterface' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureGeneratorInterface.php',
+        'ProxyManager\\Stub\\EmptyClassStub' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Stub/EmptyClassStub.php',
         'ProxyManager\\Version' => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager/Version.php',
         'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
         'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
@@ -25559,6 +25572,7 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
         'Zend\\Code\\Generator\\TraitGenerator' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generator/TraitGenerator.php',
         'Zend\\Code\\Generator\\TraitUsageGenerator' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generator/TraitUsageGenerator.php',
         'Zend\\Code\\Generator\\TraitUsageInterface' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generator/TraitUsageInterface.php',
+        'Zend\\Code\\Generator\\TypeGenerator' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generator/TypeGenerator.php',
         'Zend\\Code\\Generator\\ValueGenerator' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generator/ValueGenerator.php',
         'Zend\\Code\\Generic\\Prototype\\PrototypeClassFactory' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generic/Prototype/PrototypeClassFactory.php',
         'Zend\\Code\\Generic\\Prototype\\PrototypeGenericInterface' => __DIR__ . '/..' . '/zendframework/zend-code/src/Generic/Prototype/PrototypeGenericInterface.php',
@@ -26407,10 +26421,10 @@ class ComposerStaticInit010ca4312e100798d7564495c1d6fc31
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit010ca4312e100798d7564495c1d6fc31::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit010ca4312e100798d7564495c1d6fc31::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit010ca4312e100798d7564495c1d6fc31::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit010ca4312e100798d7564495c1d6fc31::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit42f5988105ee0288c4673a6e19f14684::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit42f5988105ee0288c4673a6e19f14684::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit42f5988105ee0288c4673a6e19f14684::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit42f5988105ee0288c4673a6e19f14684::$classMap;
 
         }, null, ClassLoader::class);
     }
