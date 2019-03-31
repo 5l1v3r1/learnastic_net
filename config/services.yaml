@@ -1,0 +1,101 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        public: true       # Allows optimizing the container by removing unused services; this also means
+          # fetching services directly from the container via $container->get() won't work.
+        # The best practice is to be explicit about your dependencies anyway.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+
+    Chamilo\CoreBundle\:
+        resource: '../src/CoreBundle/*'
+        exclude: '../src/CoreBundle/{Entity,Migrations,Tests,Admin,Block,Component,Repository,Security,EventListener}'
+        public: true
+
+    _instanceof:
+        Sylius\Bundle\ResourceBundle\Controller\ResourceController:
+            autowire: false
+
+    Chamilo\CoreBundle\Controller\ResourceUploaderController:
+        autowire: false
+
+    Chamilo\CoreBundle\Controller\ResourceController:
+        autowire: false
+
+    Chamilo\PageBundle\:
+        resource: '../src/PageBundle/*'
+        exclude: '../src/PageBundle/{Entity,Migrations,Tests}'
+        public: true
+
+    Chamilo\ThemeBundle\:
+        autowire: true
+        resource: '../src/ThemeBundle/*'
+        exclude: '../src/ThemeBundle/{Entity,Migrations,Tests}'
+        public: true
+
+    Chamilo\ThemeBundle\Controller\ExceptionController:
+        public: true
+        arguments:
+            $debug: '%kernel.debug%'
+
+    Doctrine\ORM\EntityManager: "@doctrine.orm.default_entity_manager"
+
+sylius_settings:
+    driver: doctrine/orm
+
+#sylius_resource:
+#    resources:
+#        app.document:
+#            templates: ChamiloCoreBundle:Document
+#            classes:
+#                controller: Chamilo\CoreBundle\Controller\ResourceController
+#                model: Chamilo\CourseBundle\Entity\CDocument
+#                repository: Chamilo\CoreBundle\Repository\ResourceRepository
+
+
+#sonata.media.provider.private:
+#    class: Sonata\MediaBundle\Provider\FileProvider
+#    tags:
+#        - { name: sonata.media.provider }
+#    arguments:
+#        - 'sonata.media.provider.private'
+#        - '@app.sonata.media.private.filesystem'
+#        - '@sonata.media.cdn.server'
+#        - '@sonata.media.generator.default'
+#        - '@sonata.media.thumbnail.format'
+#
+#chamilo.sonata.media.private.filesystem:
+#    class: Gaufrette\Filesystem
+#    arguments: ['@chamilo.sonata.media.private.adapter']
+#
+#chamilo.sonata.media.private.adapter:
+#    class: Sonata\MediaBundle\Filesystem\Local
+#    arguments:
+#        - "%kernel.root_dir%/../doclib/uploads"
+#        - true
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    password_encryption: '%env(APP_ENCRYPT_METHOD)%'
+    secret: '%env(APP_SECRET)%'
+    locale: '%env(APP_LOCALE)%'
+    url_append: '%env(APP_URL_APPEND)%'
+    installed: '%env(APP_INSTALLED)%'
+    twig:
+        form:
+            resources:
+                - 'GeneratorBundle::fields.html.twig'
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: admin@example.com
+    mailer_password: null
+    course_info_is_not_editable: false
+    sonata_media.cdn.host: '%url_append%/public/resource'
+    sonata_page.varnish.command: 'if [ ! -r "/etc/varnish/secret" ]; then echo "VALID ERROR :/"; else varnishadm -S /etc/varnish/secret -T 127.0.0.1:6082 {{ COMMAND }} "{{ EXPRESSION }}"; fi;'
+    router.request_context.base_url: '%url_append%'
+    asset.request_context.base_path: '%url_append%'

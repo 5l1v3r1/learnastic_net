@@ -1,0 +1,16 @@
+{% extends "@ChamiloTheme/Layout/layout_one_col.html.twig" %}
+
+{% block content %}
+    {% autoescape false %}
+        <h3>{{ user.username }}</h3>
+        {{ user.firstname }}
+        {{ user.lastname }}
+        {{ user.competences }}
+        {{ user.openarea }}
+        {{ user.teach }}
+
+
+        {{ user.diplomas }}
+
+    {% endautoescape %}
+{% endblock %}

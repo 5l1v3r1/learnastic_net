@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+{# Check settings to add more metadata in app/config/sonata/sonata_seo.yml #}
+{{ sonata_seo_metadatas() }}
+<link href="https://chamilo.org/chamilo-lms/" rel="help"/>
+<link href="https://chamilo.org/the-association/" rel="author"/>
+<link href="https://chamilo.org/the-association/" rel="copyright"/>
+<link rel="apple-touch-icon" href="{{ url('legacy_public') ~ 'apple-touch-icon.png' }}"/>
+{% autoescape false %}
+    {{ favico }}
+{% endautoescape %}
+<title>
+{% block title %}
+{{ chamilo_settings_get('platform.institution') }} - {{ chamilo_settings_get('platform.site_name') }}
+{% endblock %}
+</title>
+
+{% set bug_notification_link = '' %}
+{% set help_content = '' %}
+{% set header_extra_content = '' %}
+{% set template = 'default' %}
+{% set notification_menu = '' %}
+{% set accessibility = '' %}
+{% set containerClass = '' %}
+{% set breadcrumb = '' %}
+{% set user_notifications = '' %}
+{% set message_url = '' %}
+{% set profile_link = '' %}
+{% set message_link = '' %}
+
+{# Files app.css is generated from "assets/css/app.scss" file using the file webpack.config.js #}
+<link rel="stylesheet" href="{{ url('legacy_public') ~ 'build/css/app.css' }}"/>
+{% if theme %}
+<link rel="stylesheet" href="{{ url('legacy_public') ~ 'build/css/themes/'~ theme ~'/default.css' }}"/>
+{% endif %}
+<link rel="stylesheet" media="print" href="{{ url('legacy_public') ~ 'build/css/print.css' }}"/>
+{# Add third party js libraries that can't be loaded using webpack #}
+{% include "@ChamiloTheme/Layout/legacy_js.html.twig" %}
+{# app.js is generated using the file webpack.config.js and using yarn read /assets/README.md for more info #}
+<script src="{{ url('legacy_public') ~ 'build/runtime.js' }}"></script>
+<script src="{{ url('legacy_public') ~ 'build/app.js' }}"></script>
+
+{# Check chamilo_js key in assetic.yml #}
+{% block javascripts %}
+    {#{%- javascripts '@chamilo_js' -%}#}
+    {#<script src="{{ asset_url }} "></script>#}
+    {#{% endjavascripts %}#}
+    {% block chamilo_header_js %}
+        {# Loading legacy js using the $htmlHeadXtra array #}
+        {% autoescape false %}
+            {% for js in legacy_javascript %}
+                {{ js }}
+            {% endfor %}
+        {% endautoescape %}
+    {% endblock %}
+
+    {#'@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js'#}
+
+    {#{% javascripts#}
+    {#'bundles/mopabootstrap/js/mopabootstrap-collection.js'#}
+    {#'bundles/mopabootstrap/js/mopabootstrap-subnav.js'#}
+    {#%}#}
+    {#<script type="text/javascript" src="{{ asset_url | replace({'/app_dev.php': ''}) }}"></script>#}
+    {#{% endjavascripts %}#}
+{% endblock %}
+

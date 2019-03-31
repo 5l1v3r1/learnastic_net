@@ -1,0 +1,5 @@
+#services:
+#    chamilo_theme_widget_extension:
+#        class: 'Chamilo\ThemeBundle\Twig\WidgetExtension'
+#        tags:
+#            - 'twig.extension'
