@@ -1,2 +1,0 @@
-fos_js_routing:
-    request_context_base_url: '%url_append%'
